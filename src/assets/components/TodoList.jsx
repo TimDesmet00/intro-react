@@ -1,14 +1,16 @@
+
 export const TodoList = () => {
+    const todos = ["Learn React", "Be Awesome!"];
     return (
         <div className="todoList">
-            <div>
-                <input type="checkbox" name="" id="" />
-                <label htmlFor="">Learn React</label>
-            </div>
-            <div>
-                <input type="checkbox" name="" id="" />
-                <label htmlFor="">Be Awesome!</label>
-            </div>
+            <ul>
+                {todos.map((todo, index) => (
+                <li key={index}>
+                    <input type="checkbox" />{ todo }
+                </li>
+                ))}
+            </ul>
         </div>
-    )
+    );
 }
+
