@@ -1,13 +1,22 @@
 import { Title } from '../components/Title';
 import { Input } from '../components/Input';
 import { BtnForm } from '../components/BtnForm';
+import {useRef} from 'react';
+
 
 export const Header = () => {
+    const inputRef = useRef();
+
+    function clickHandler() {
+        const inputElement = inputRef.current;
+        console.log(inputElement.value);
+    }
+
     return (
         <div className='header'>
             <Title />
-            <Input type="text" name="todo" id="todo" label="ToDo:" />
-            <BtnForm />
+            <Input ref={inputRef} type="text" name="todo" id="todo" label="ToDo:" />
+            <BtnForm  onClick={clickHandler}/>
         </div>
     )
 }

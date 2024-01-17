@@ -1,12 +1,14 @@
-export const Input = ({ type, name, id, label }) => {
+import React from "react";
+
+export const Input = React.forwardRef (({ type, name, id, label }, ref) => {
     return (
         <div>
             <div className="label">
                 <label htmlFor={id}>{label}</label>
             </div>
             <div className="input">
-                <input type={type} name={name} id={id} />
+                <input ref={ref} type={type} name={name} id={id} />
             </div>
         </div>
     );
-};
+});

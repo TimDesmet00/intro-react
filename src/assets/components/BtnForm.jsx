@@ -1,3 +1,4 @@
-export const BtnForm = () => {
-  return <button>Add ToDo</button>;
+export const BtnForm = ({onClick}) => {
+  
+  return <button onClick={onClick}>Add ToDo</button>;
 }

@@ -12,6 +12,7 @@ export const TodoList = () => {
         newTodos[index].completed = event.target.checked;
         setTodos(newTodos);
 
+        // vérification de la valeur de l'index dans la console
         console.log(`Checkbox ${index} is checked: ${event.target.checked}`);
     }
     return (
