@@ -1,4 +1,18 @@
-# React + Vite
+# Introduction to React
+
+Exercice individuel réalisé dans le cadre de la formation BeCode, centré sur l'exploration approfondie du framework React. L'objectif était de prendre en main cette technologie en créant de manière pratique une Todo List, permettant ainsi une immersion concrète dans les concepts fondamentaux de React.
+
+## Authors
+
+- [Tim Desmet](https://github.com/TimDesmet00)
+
+## Deployment
+
+/
+
+## Tech Stack
+
+React
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
