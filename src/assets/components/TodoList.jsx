@@ -1,12 +1,7 @@
 import { useState } from "react";
 
-export const TodoList = () => {
-    const initialTodos = [
-        { text: "Learn React", completed : false },
-        {text: "Be Awesome!", completed : false },
-        {text: "Code a page!", completed : false }
-    ];
-    const [todos, setTodos] = useState(initialTodos);
+export const TodoList = ({ todos, setTodos}) => {
+    
     const checkboxChange =(event, index) => {
         const newTodos = [...todos];
         newTodos[index].completed = event.target.checked;

@@ -4,11 +4,14 @@ import { BtnForm } from '../components/BtnForm';
 import {useRef} from 'react';
 
 
-export const Header = () => {
+export const Header = ({ addTodo }) => {
     const inputRef = useRef();
 
     function clickHandler() {
         const inputElement = inputRef.current;
+        addTodo(inputElement.value);
+        inputElement.value = '';
+
         console.log(inputElement.value);
     }
 
