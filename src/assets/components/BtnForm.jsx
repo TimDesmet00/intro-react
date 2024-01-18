@@ -1,4 +1,4 @@
 export const BtnForm = ({onClick}) => {
   
-  return <button onClick={onClick}>Add ToDo</button>;
+  return <button class="btn" onClick={onClick}>Add ToDo</button>;
 }

@@ -1,1 +1,12 @@
-
+.btn {
+  background-color: #5D5C61;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  box-shadow: 2px 2px 5px #000;
+}/*# sourceMappingURL=App.css.map */
