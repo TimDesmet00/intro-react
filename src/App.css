@@ -1,12 +1,34 @@
-.btn {
+.title {
+  text-align: center;
+  color: antiquewhite;
+}
+
+.input {
+  text-align: center;
+}
+.input .input-box {
   background-color: #5D5C61;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  color: antiquewhite;
   border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  margin-top: 1em;
+  background-color: #5D5C61;
+  color: antiquewhite;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: #B1A296 3px solid;
+  box-shadow: 2px 2px 5px #000;
+  transition: all 1.2s ease-in-out;
 }
 .btn:hover {
-  box-shadow: 2px 2px 5px #000;
+  box-shadow: 5px 5px 5px #000;
+  border: #B1A296 3px solid;
+}
+
+body {
+  background: rgb(85, 122, 149);
+  background: linear-gradient(180deg, rgb(85, 122, 149) 24%, rgb(115, 149, 174) 64%, rgb(177, 162, 150) 100%);
+  min-height: 100vh;
 }/*# sourceMappingURL=App.css.map */

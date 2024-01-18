@@ -1,1 +1,9 @@
-@import './sass/sections/header.scss'
+@import './sass/sections/header.scss';
+
+body{
+    background: rgb(85,122,149);
+    background: linear-gradient(180deg, rgba(85,122,149,1) 24%, rgba(115,149,174,1) 64%, rgba(177,162,150,1) 100%);
+    min-height: 100vh;
+}
+
+
