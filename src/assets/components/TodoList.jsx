@@ -11,7 +11,7 @@ export const TodoList = ({ todos, setTodos}) => {
         console.log(`Checkbox ${index} is checked: ${event.target.checked}`);
     }
     return (
-        <div className="todoList">
+        <div className="todo-list">
             <ul>
                 {todos.map((todo, index) => (
                 <li key={index}>

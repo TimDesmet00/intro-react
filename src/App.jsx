@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './assets/sections/header'
 import { Mainer} from './assets/sections/mainer'
+import { Footer } from './assets/sections/footer'
 import { useState, useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -36,6 +37,7 @@ export const App = () => {
     <div className='app'>
       <Header addTodo={addTodo} />
       <Mainer todos={todos} setTodos={setTodos} />
+      <Footer />
     </div>
   )
 }

@@ -30,8 +30,40 @@
   border: #B1A296 3px solid;
 }
 
-body {
+.main-title {
+  text-align: center;
+  color: antiquewhite;
+}
+
+.todo-list {
+  color: antiquewhite;
+}
+.todo-list ul {
+  list-style: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer a {
+  text-decoration: none;
+  color: #5D5C61;
+}
+.footer a:hover {
+  color: antiquewhite;
+}
+.footer span {
+  color: #5D5C61;
+}
+
+body, #root {
   background: rgb(85, 122, 149);
   background: linear-gradient(180deg, rgb(85, 122, 149) 24%, rgb(115, 149, 174) 64%, rgb(177, 162, 150) 100%);
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }/*# sourceMappingURL=App.css.map */
