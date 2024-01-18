@@ -12,7 +12,10 @@
   border: none;
 }
 
-.btn {
+.btn-container {
+  text-align: center;
+}
+.btn-container .btn {
   margin-top: 1em;
   background-color: #5D5C61;
   color: antiquewhite;
@@ -22,7 +25,7 @@
   box-shadow: 2px 2px 5px #000;
   transition: all 1.2s ease-in-out;
 }
-.btn:hover {
+.btn-container .btn:hover {
   box-shadow: 5px 5px 5px #000;
   border: #B1A296 3px solid;
 }
