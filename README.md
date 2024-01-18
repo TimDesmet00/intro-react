@@ -8,7 +8,7 @@ Exercice individuel réalisé dans le cadre de la formation BeCode, centré sur 
 
 ## Deployment
 
-/
+https://intro-react-pi.vercel.app/
 
 ## Tech Stack
 
