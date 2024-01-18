@@ -9,10 +9,9 @@ export const Header = ({ addTodo }) => {
 
     function clickHandler() {
         const inputElement = inputRef.current;
-        addTodo(inputElement.value);
-        inputElement.value = '';
-
         console.log(inputElement.value);
+        addTodo(inputElement.value);
+        inputElement.value = '';        
     }
 
     return (

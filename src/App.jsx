@@ -3,20 +3,35 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './assets/sections/header'
 import { Mainer} from './assets/sections/mainer'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { v4 as uuidv4 } from 'uuid';
+
+const LSKEY = "MyTodoApp";
 
 export const App = () => {
-  const initialTodos = [
-    { text: "Learn React", completed : false },
-    {text: "Be Awesome!", completed : false },
-    {text: "Code a page!", completed : false }
-  ];
+  const initialTodos = [];
   const [todos, setTodos] = useState(initialTodos);
 
   const addTodo = (todoText) => {
-      const newTodos = [...todos, { text: todoText, completed: false }];
+      const newTodos = [...todos, { id: uuidv4(), todo: todoText, completed: false }];
       setTodos(newTodos);
   };
+
+  useEffect(() => {
+    const storedTodos = window.localStorage.getItem(LSKEY + ".todos");
+    console.log('retrieved todos', storedTodos);
+    if (storedTodos) {
+      setTodos(JSON.parse(storedTodos));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (todos.length > 0) {
+      console.log('storing todos', todos);
+      window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
+    }
+}, [todos]);
+
   return(
     <div className='app'>
       <Header addTodo={addTodo} />

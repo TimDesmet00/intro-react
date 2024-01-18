@@ -15,7 +15,7 @@ export const TodoList = ({ todos, setTodos}) => {
             <ul>
                 {todos.map((todo, index) => (
                 <li key={index}>
-                    <input type="checkbox" checked={todo.completed} onChange={(event) => checkboxChange(event, index)} />{ todo.text }
+                    <input type="checkbox" checked={todo.completed} onChange={(event) => checkboxChange(event, index)} />{ todo.todo }
                 </li>
                 ))}
             </ul>
