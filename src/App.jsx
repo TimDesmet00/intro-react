@@ -31,12 +31,18 @@ export const App = () => {
       console.log('storing todos', todos);
       window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
     }
-}, [todos]);
+  }, [todos]);
+
+  const clearTodos = () => {
+    window.localStorage.removeItem(LSKEY + ".todos");
+    setTodos([]);
+  };
 
   return(
     <div className='app'>
       <Header addTodo={addTodo} />
       <Mainer todos={todos} setTodos={setTodos} />
+      <button onClick={clearTodos}>Clear Todos</button>
       <Footer />
     </div>
   )
