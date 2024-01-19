@@ -42,7 +42,9 @@ export const App = () => {
     <div className='app'>
       <Header addTodo={addTodo} />
       <Mainer todos={todos} setTodos={setTodos} />
-      <button onClick={clearTodos}>Clear Todos</button>
+      <div className="btn-container">
+        <button className='btn' onClick={clearTodos}>Clear Todos</button>
+      </div>
       <Footer />
     </div>
   )
